@@ -1,0 +1,994 @@
+:root {
+    --bg: rgb(253, 249, 19);
+    --black: #000;
+    --group: {
+        content: '1/2';
+        position: absolute;
+        top: 47.5%;
+        left: 80%;
+        font-weight: bold;
+        margin-left: 5px;
+        font-size: 0.9em;
+    }
+}
+
+*,
+body {
+    padding: 0px;
+    margin: 0px;
+    /* background-color: var(--bg); */
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.table {
+    background-color: var(--bg);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    padding: 10px;
+}
+
+.table>div {
+    background-color: var(--bg)
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.column:nth-child(1) {
+    height: 100%;
+    border: 'none';
+    height: 100%;
+    border: none;
+}
+
+.one {
+    height: 100%;
+    font-weight: 500;
+    background-color: var(--bg)
+}
+
+.one>div.fraction {
+    position: relative;
+    height: 94%;
+    border-top: 5px solid var(--black);
+    border-left: 5px solid var(--black);
+    border-bottom: 5px solid var(--black);
+    padding: 0px;
+}
+
+div.fraction::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: var(--black);
+    top: -2px;
+    left: -2px;
+    border-bottom-right-radius: 500px;
+}
+
+div.fraction::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: var(--black);
+    bottom: -2px;
+    left: -2px;
+    border-top-right-radius: 500px;
+}
+
+.fractoral-main {
+    /* height: 30%; */
+}
+
+.fractoral-main:nth-child(1) {
+    width: 80%;
+    height: 50%;
+}
+
+.fractoral-main.--1 {
+    border-bottom: 5px solid var(--black);
+}
+
+.fractoral-main.--1::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 15px;
+    background: var(--black);
+    top: 47.5%;
+    left: -4px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+
+.fractoral-main.--1::after {
+    content: '1/2';
+    position: absolute;
+    top: 47.5%;
+    left: 80%;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+.--1>.divider {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+.--1>.divider:nth-child(1) {
+    border-bottom: 5px solid var(--black);
+}
+
+.--1>.divider:nth-child(2) {}
+
+.--1>.divider>i:nth-child(1) {
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--1>.divider>i:nth-child(1)::after {
+    content: '15/16';
+    position: absolute;
+    right: -45px;
+    bottom: -8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1>.divider>i:nth-child(2) {
+    width: 55px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--1>.divider>i:nth-child(2)::after {
+    content: '7/8';
+    position: absolute;
+    right: -45px;
+    bottom: -8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1>.divider>i:nth-child(3) {
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--1>.divider>i:nth-child(3)::after {
+    content: '13/16';
+    position: absolute;
+    right: -45px;
+    bottom: -8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* 
+.--1>.divider>i:nth-child(3)::after {
+    content: '9/161';
+    position: absolute;
+    right: -45px;
+    bottom: -8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+} */
+
+.--1>.divider::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    background: var(--black);
+    top: 22.5%;
+    left: -3px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+
+.--1>.divider::after {
+    content: '3/4';
+    position: absolute;
+    top: 22%;
+    right: 20px;
+    font-weight: 500;
+}
+
+.fractoral-main:nth-child(2) {
+    width: 100%;
+    height: 50%;
+}
+
+.--2>.divider {
+    width: 64%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+.--2>.divider::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    background: var(--black);
+    top: 73%;
+    left: -3px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+
+.--2>.divider::after {
+    content: '9/4';
+    position: absolute;
+    top: 73%;
+    right: -5px;
+    font-weight: 500;
+}
+
+.--2>.divider:nth-child(1) {
+    border-bottom: 5px solid var(--black);
+}
+
+.--2>.divider>i:nth-child(1) {
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--2>.divider>i:nth-child(1)::after {
+    content: '7/6';
+    position: absolute;
+    /* top: 10%; */
+    bottom: -8px;
+    right: -30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--2>.divider>i:nth-child(2) {
+    width: 55px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--2>.divider>i:nth-child(2)::after {
+    content: '3/8';
+    position: absolute;
+    /* top: 10%; */
+    bottom: -8px;
+    right: -30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--2>.divider>i:nth-child(3) {
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--2>.divider>i:nth-child(3)::after {
+    content: '5/16';
+    position: absolute;
+    /* top: 10%; */
+    bottom: -8px;
+    right: -40px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.fractoral-main:nth-child(3) {}
+
+.fractoral-main:nth-child(4) {}
+
+.column:nth-child(2) {
+    /* background: rgb(9, 94, 30); */
+    height: 100%;
+}
+
+.numbers {
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 30px 0px; */
+}
+
+.numbers>h1 {
+    padding: 20px 17px;
+}
+
+.numbers :nth-child(2) {
+    position: absolute;
+    bottom: -30px;
+}
+
+.two {
+    height: 100%;
+    font-weight: 500;
+    background-color: var(--bg)
+}
+
+.two>div.decimal {
+    border-top: 5px solid var(--black);
+    border-right: 5px solid var(--black);
+    border-bottom: 5px solid var(--black);
+    position: relative;
+    height: 94%;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    place-items: end;
+    flex-direction: column;
+    /* padding: 15px 0px; */
+    padding-top: px;
+    /* background: rgb(245, 241, 241); */
+    background-color: var(--bg)
+}
+
+.two>div.decimal::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: var(--black);
+    top: -2px;
+    right: -5px;
+    border-bottom-left-radius: 900px;
+}
+
+div.decimal::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: var(--black);
+    bottom: -2px;
+    right: -5px;
+    border-top-left-radius: 500px;
+}
+
+
+/* .decimal-main.--3 {
+    display: flex;
+    justify-content: flex-end;
+    background: black;
+} */
+
+.decimal-main.--1 {
+    /* background: green; */
+    width: 90%;
+    height: 50%;
+    display: flex;
+    ;
+    border-bottom: 5px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: end;
+}
+
+.decimal_divider.--1 {
+    height: 50%;
+    width: 80%;
+    border-bottom: 5px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 0px;
+    place-items: end;
+    position: relative;
+}
+
+.decimal_divider.--1::after {
+    position: absolute;
+    content: '0.75';
+    bottom: -13px;
+    left: -34px;
+    /* height: 20px;
+    width: 10px; */
+}
+
+.decimal_divider.--1::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 13px;
+    background: #000;
+    border-bottom-left-radius: 500px;
+    border-top-left-radius: 500px;
+    top: 94%;
+    right: -5px;
+}
+
+.decimal-main.--2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: end;
+    height: 50%;
+    display: flex;
+    padding: -40px 0px;
+}
+
+.decimal-main.--2::before {
+    position: absolute;
+    content: '';
+    background: var(--black);
+    height: 30px;
+    width: 15px;
+    bottom: 48%;
+    right: -5px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+}
+
+.decimal-main.--2::after {
+    content: '0.5';
+    position: absolute;
+    bottom: 48.7%;
+    left: -10px;
+    font-weight: bold;
+}
+
+.--1>.decimal_divider :nth-child(1) {
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+    /* background: #000; */
+    border-bottom: 5px solid var(--black);
+}
+
+.--1>.decimal_divider>i:nth-child(1)::after {
+    content: '0.9375';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1>.decimal_divider>i:nth-child(2) {
+    width: 55px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+    border-bottom: 5px solid var(--black);
+}
+
+.--1>.decimal_divider>i:nth-child(2)::after {
+    content: '0.875';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1>.decimal_divider>i:nth-child(3) {
+    position: absol;
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+    border-bottom: 5px solid var(--black);
+}
+
+.--1>.decimal_divider>i:nth-child(3)::after {
+    content: '0.8125';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--2.decimal_divider {
+    /* background: green; */
+    height: 50%;
+    /* border-bottom: 5px solid var(--black); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: end;
+    padding: 15px 0px;
+}
+
+.--1.decimal1_divider {
+    /* background: orange; */
+    width: 220%;
+    height: 50%;
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: end;
+    padding: 15px 0px;
+}
+
+.--1.decimal1_divider::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 10px;
+    background: var(--black);
+    bottom: 143.5px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+}
+
+.--1.decimal1_divider::after {
+    position: absolute;
+    content: '0.25';
+    top: 440px;
+    left: -3px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1.decimal1_divider>i:nth-child(1) {
+    width: 35px;
+    height: 5px;
+    border-bottom: 5px solid var(--black);
+    position: relative;
+}
+
+.--1.decimal1_divider>i:nth-child(1)::after {
+    content: '0.4375';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1.decimal1_divider>i:nth-child(2) {
+    width: 55px;
+    height: 5px;
+    border-bottom: 5px solid var(--black);
+    position: relative;
+}
+
+.--1.decimal1_divider>i:nth-child(2)::after {
+    content: '0.375';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1.decimal1_divider>i:nth-child(3) {
+    width: 35px;
+    height: 5px;
+    border-bottom: 5px solid var(--black);
+    position: relative;
+}
+
+.--1.decimal1_divider>i:nth-child(3)::after {
+    content: '0.3125';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--2.decimal1_divider {
+    width: 100%;
+    height: 50%;
+    /* border-bottom: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: end;
+    padding: 15px 0px;
+}
+
+.--2.decimal1_divider>i:nth-child(1) {
+    width: 35px;
+    height: 5px;
+    border-bottom: 5px solid var(--black);
+    position: relative;
+}
+
+.--2.decimal1_divider>i:nth-child(1)::after {
+    content: '0.1875';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--2.decimal1_divider>i:nth-child(2) {
+    width: 55px;
+    height: 5px;
+    border-bottom: 5px solid var(--black);
+    position: relative;
+}
+
+.--2.decimal1_divider>i:nth-child(2)::after {
+    content: '0.125';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--2.decimal1_divider>i:nth-child(3) {
+    width: 35px;
+    height: 5px;
+    border-bottom: 5px solid var(--black);
+    position: relative;
+}
+
+.--2.decimal1_divider>i:nth-child(3)::after {
+    content: '0.0625';
+    position: absolute;
+    bottom: -12px;
+    left: -53px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* .--2.decimal_divider :nth-child(1) {
+    border-bottom: 5px solid var(--black);
+} */
+
+
+/* .--1>.divider_decimal:nth-child(1) {
+    border-bottom: 5px solid var(--black);
+}
+
+.--1>.divider_decimal>i:nth-child(1) {
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--1>.divider_decimal>i:nth-child(1)::after {
+    content: '7/6';
+    position: absolute;
+    
+    bottom: -8px;
+    right: -30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--1>.divider_decimal>i:nth-child(2) {
+    width: 55px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+} */
+
+.--2>.divider>i:nth-child(2)::after {
+    content: '3/8';
+    position: absolute;
+    /* top: 10%; */
+    bottom: -8px;
+    right: -30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.--2>.divider>i:nth-child(3) {
+    width: 35px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.--2>.divider>i:nth-child(3)::after {
+    content: '5/16';
+    position: absolute;
+    /* top: 10%; */
+    bottom: -8px;
+    right: -40px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.column:nth-child(3) {
+    background: #000;
+    height: 100%;
+}
+
+.global_width {
+    width: calc(80% + 30px);
+}
+
+.table_wrapper {
+    background: yellow;
+}
+
+.fraction_decimal_top {
+    height: 110px;
+    /* background: green; */
+}
+
+.Fraction_decimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Fraction_decimal span {
+    font-weight: 500;
+}
+
+.hey {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    background: white;
+    justify-content: center;
+}
+
+.new {
+    background: white;
+}
+
+.fraction_decimal_down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: blue;
+}
+
+.fraction_decimal_down_element {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    background-color: brown;
+}
+
+.fraction_decimal_down_body {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: blueviolet;
+    /* padding-top: 30px; */
+}
+
+.upward {
+    display: flex;
+    height: 60px;
+    background: yellow;
+}
+
+.right {
+    font-weight: 700;
+    padding: 40px 50px;
+}
+
+.left {
+    font-weight: 700;
+    padding: 40px 50px;
+}
+
+.middle {
+    /* position: absolute; */
+    padding-top: 40;
+}
+
+.downward {
+    background: white;
+    height: 80vh;
+}
+
+
+/* .fraction_right_parent {
+    height: 80vh;
+    padding-top: 50px;
+} */
+
+.fraction_left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    background: green;
+    width: 350%;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+
+.fraction_left2 {
+    margin-top: px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left3 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left4 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left5 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left6 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left7 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left8 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left9 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left10 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left11 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left12 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left13 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left114 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left15 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_left16 {
+    margin-top: 28px;
+    border-top: 5px solid black;
+    width: 25px;
+}
+
+.fraction_middle {
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: orange;
+    padding-top: 10px;
+}
+
+
+/* .fraction_middle :nth-child(1) {
+    padding-bottom: 9px;
+} */
+
+.fraction_right {
+    display: flex;
+    flex-direction: column;
+    background: red;
+    width: 350%;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-top: 25px;
+    margin-bottom: 13px;
+    /* display: flex;
+    flex-direction: column;
+    align-self: flex-end; */
+    /* padding-top: 30px; */
+    /* border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 350%;
+    background: red; */
+    /* margin-top: 25px; */
+    /* margin-top: 5px; */
+}
+
+.div {
+    width: 40%;
+    margin-left: 0px;
+    height: 20rem;
+    align-self: flex-end;
+    background: green;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .global_width {}
+    .table_wrapper {}
+    .table {}
+}
+
+.fraction_left {}
